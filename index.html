@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sravan ❤️ Divya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2>Wedding Invitation</h2>
+    <p class="save-date">Save the Date</p>
+    <h1>Sravan ❤️ Divya</h1>
+    <p class="wedding-date">25 February 2026</p>
+
+
+    <div class="countdown" id="countdown">
+      <div><span id="days">00</span><small>Days</small></div>
+      <div><span id="hours">00</span><small>Hours</small></div>
+      <div><span id="minutes">00</span><small>Minutes</small></div>
+      <div><span id="seconds">00</span><small>Seconds</small></div>
+    </div>
+
+    <!-- BUTTON WITH SCROLL -->
+    <button class="scroll-btn" onclick="scrollToInvite()">View Invitation</button>
+  </div>
+</section>
+
+<!-- COUPLE SECTION (SECTION 2) -->
+<section id="invitation" class="couple-section">
+
+<h2 class="section-title">The Happy Couple ❤️</h2>
+
+<div class="couple-container">
+
+<!-- Bride -->
+    <div class="couple-card" onclick="openModal('bride')">
+      <img src="assets/images/bride.png" class="profile-img">
+      <h3>Bride</h3>
+      <p>Divya</p>
+    </div>
+
+<!-- Groom -->
+    <div class="couple-card" onclick="openModal('groom')">
+      <img src="assets/images/groom.png" class="profile-img">
+      <h3>Groom</h3>
+      <p>Sravan</p>
+    </div>
+
+</div>
+
+<!-- Button to events -->
+  <div class="events-btn-wrap">
+    <button class="scroll-btn" onclick="scrollToEvents()">Checkout the events</button>
+  </div>
+
+</section>
+
+<!-- EVENTS SECTION (SECTION 3) -->
+<section id="events" class="events-section">
+
+<h2 class="section-title">Wedding Events</h2>
+
+<div class="events-container">
+
+<!-- Vokka Sangyam -->
+    <div class="event-card glass">
+      <h3>🌸 Vakka Sangyam</h3>
+      <p><strong>Date:</strong> 24 February 2026</p>
+      <p><strong>Time:</strong> Evening</p>
+      <p class="venue">
+  <strong>Venue:</strong> TTD Kalyana Mandapam<br>
+  Vontimitta, Kadapa, Andhra Pradesh
+
+  <a 
+    href="https://maps.app.goo.gl/n3mhkpnC54VH18TG9"
+    target="_blank"
+    class="map-link"
+    aria-label="Open location in Google Maps"
+  >
+    📍 View on Map
+  </a>
+</p>
+
+    </div>
+
+<!-- Reception -->
+    <div class="event-card glass">
+      <h3>🎉 Reception</h3>
+      <p><strong>Date:</strong> 24 February 2026</p>
+      <p><strong>Time:</strong> 6:30 PM onwards</p>
+      <p class="venue">
+      <strong>Venue:</strong> TTD Kalyana Mandapam<br>
+       Vontimitta, Kadapa, Andhra Pradesh
+
+  <a 
+    href="https://maps.app.goo.gl/n3mhkpnC54VH18TG9"
+    target="_blank"
+    class="map-link"
+    aria-label="Open location in Google Maps"
+  >
+    📍 View on Map
+  </a>
+</p>
+
+      <p class="subline">
+      <span class="dinner-icon">🍽️</span> Followed by dinner
+      </p>
+    </div>
+
+<!-- Muhurtham -->
+    <div class="event-card glass">
+      <h3>💍 Muhurtham</h3>
+      <p><strong>Date:</strong> 25 February 2026</p>
+      <p><strong>Time:</strong> 4:30 AM - 5:30 AM</p>
+      <p class="venue">
+  <strong>Venue:</strong> TTD Kalyana Mandapam<br>
+  Vontimitta, Kadapa, Andhra Pradesh
+
+  <a 
+    href="https://maps.app.goo.gl/n3mhkpnC54VH18TG9"
+    target="_blank"
+    class="map-link"
+    aria-label="Open location in Google Maps"
+  >
+    📍 View on Map
+  </a>
+</p>
+
+    </div>
+
+</div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
